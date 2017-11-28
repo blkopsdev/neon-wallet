@@ -1,12 +1,12 @@
 {
-  "name": "Aphelion",
+  "name": "Concierge",
   "version": "0.0.8",
   "main": "./main.js",
   "description": "Light wallet for NEO blockchain",
   "homepage": "https://github.com/aphtoken/neon-wallet",
   "author": {
-    "name": "Aphelion",
-    "email": "support@aphelion.org"
+    "name": "Concierge",
+    "email": "support@Concierge.org"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
@@ -21,7 +21,7 @@
   "keywords": [],
   "license": "ISC",
   "build": {
-    "appId": "com.electron.aphelion",
+    "appId": "com.electron.Concierge",
     "files": [
       "./main.js",
       "app/dist/index.html",

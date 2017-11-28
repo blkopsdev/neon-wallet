@@ -47,6 +47,7 @@ class Claim extends Component {
 
   componentDidUpdate = () => {
     // if we requested a claim and new claims are available, do claim
+    console.log(this.props);
     if (this.props.claimRequest === true && this.props.claimWasUpdated == true){
       this.props.dispatch(setClaimRequest(false));
       doClaimNotify(this.props.dispatch, this.props.net, this.props.address, this.props.wif);

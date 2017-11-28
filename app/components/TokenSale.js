@@ -74,6 +74,7 @@ const participateInSale = (dispatch, net, wif, totalNeo) => {
       })
   }).catch((e) => {
     dispatch(sendEvent(false, "This script hash cannot mint tokens."));
+    console.log(e)
     setTimeout(() => dispatch(clearTransactionEvent()), 5000);
     return false;
   });
@@ -98,7 +99,7 @@ class TokenSale extends Component {
 
   render = () =>
     <div id="tokenSale">
-      <div className="logo"><img src={logo} width="216px" height="40px"/></div>
+      <div className="logo"><img src={logo} width="170px" height="40px"/></div>
       <NetworkSwitch />
       <div className="description">Participate in Token Sale</div>
       <div className="warning">

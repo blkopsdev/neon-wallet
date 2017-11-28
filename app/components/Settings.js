@@ -22,6 +22,7 @@ const saveKeyRecovery = (keys) => {
       extensions: ['json']
     }]}, (fileName) => {
     if (fileName === undefined){
+        console.log("File failed to save...");
         return;
     }
     // fileName is a string that contains the path and filename created in the save file dialog.
@@ -38,6 +39,7 @@ const loadKeyRecovery = (dispatch) => {
   dialog.showOpenDialog((fileNames) => {
     // fileNames is an array that contains all the selected
     if(fileNames === undefined){
+        console.log("No file selected");
         return;
     }
     const filepath = fileNames[0];
@@ -96,7 +98,7 @@ class Settings extends Component {
 
   render = () =>
     <div id="settings">
-      <div className="logo"><img src={logo} width="216px" height="40px"/></div>
+      <div className="logo"><img src={logo} width="170px" height="40px"/></div>
       <div className="description">Manage your Neon wallet keys and settings</div>
       <div className="settingsForm">
         <div className="settingsItem">
