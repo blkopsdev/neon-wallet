@@ -5,8 +5,8 @@
   "description": "Light wallet for NEO blockchain",
   "homepage": "https://github.com/aphtoken/neon-wallet",
   "author": {
-    "name": "Concierge",
-    "email": "support@Concierge.org"
+    "name": "Concierge-io",
+    "email": "cto@concierge.io"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
@@ -71,7 +71,7 @@
     "isomorphic-fetch": "^2.2.1",
     "js-scrypt": "^0.2.0",
     "lodash": "^4.17.4",
-    "neon-js": "git+https://github.com/aphtoken/neon-js",
+    "neon-js": "git+https://github.com/doctordev/neon-js",
     "prop-types": "^15.6.0",
     "qrcode": "^0.8.2",
     "react": "^15.0.2",

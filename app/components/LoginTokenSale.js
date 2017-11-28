@@ -9,6 +9,7 @@ import { getAccountFromWIFKey } from 'neon-js';
 import FaEye from 'react-icons/lib/fa/eye';
 import FaEyeSlash from 'react-icons/lib/fa/eye-slash';
 
+// TODO: it is ridiculous that i just copy/pasted this file. we need some heavy refactoring...
 class LoginTokenSale extends React.Component {
     constructor(props) {
         super(props);
