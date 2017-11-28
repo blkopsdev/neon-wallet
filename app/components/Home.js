@@ -5,7 +5,7 @@ const logo = require('../images/neon-logo2.png');
 
 const Home = ({}) =>
   <div id="home">
-    <div className="logo"><img src={logo} width="216px" height="40px"/></div>
+    <div className="logo"><img src={logo} width="170px" height="45px"/></div>
     <Link to="/LoginLocalStorage"><div className="linkBox">Login using a saved wallet</div></Link>
     <Link to="/LoginEncrypted"><div className="linkBox">Login using an encrypted key</div></Link>
     <Link to="/LoginPrivateKey"><div className="linkBox">Login using a private key</div></Link>
